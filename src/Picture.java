@@ -118,6 +118,20 @@ public class Picture extends SimplePicture {
 		}
 	}
 
+	/** Method to grayscale */
+	public void grayscale() {
+		Pixel[][] pixels = this.getPixels2D();
+		for (Pixel[] rowArray : pixels) {
+			for (Pixel pixelObj : rowArray) {
+				int averageColor = (pixelObj.getRed() + pixelObj.getGreen() +
+										pixelObj.getBlue()) / 3;
+				pixelObj.setRed(averageColor);
+				pixelObj.setGreen(averageColor);
+				pixelObj.setBlue(averageColor);
+			}
+		}
+	}
+
 	/**
 	 * Method that mirrors the picture around a vertical mirror in the center of
 	 * the picture from left to right
