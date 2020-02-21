@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ColorChooser<PixLab>",
+            "request": "launch",
+            "mainClass": "ColorChooser",
+            "projectName": "PixLab"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IntArrayWorkerTester<PixLab>",
+            "request": "launch",
+            "mainClass": "IntArrayWorkerTester",
+            "projectName": "PixLab"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Picture<PixLab>",
+            "request": "launch",
+            "mainClass": "Picture",
+            "projectName": "PixLab"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PictureExplorer<PixLab>",
+            "request": "launch",
+            "mainClass": "PictureExplorer",
+            "projectName": "PixLab"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PictureTester<PixLab>",
+            "request": "launch",
+            "mainClass": "PictureTester",
+            "projectName": "PixLab"
+        }
+    ]
+}
