@@ -101,10 +101,10 @@ public class PictureTester
 
   public static void testMirrorArms()
   {
-    Picture temple = new Picture("snowman.jpg");
-    temple.explore();
-    temple.mirrorArms();
-    temple.explore();
+    Picture snowman = new Picture("snowman.jpg");
+    snowman.explore();
+    snowman.mirrorArms();
+    snowman.explore();
   }
   
   /** Method to test the collage method */

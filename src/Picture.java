@@ -245,19 +245,19 @@ public class Picture extends SimplePicture {
 	}
 
 	public void mirrorArms() {
-		int mirrorPoint = 310;
-		Pixel leftPixel = null;
-		Pixel rightPixel = null;
+		int mirrorPoint = 195;
+		Pixel topPixel = null;
+		Pixel bottomPixel = null;
 		Pixel[][] pixels = this.getPixels2D();
 
 		// loop through the rows
-		for (int row = 164; row < 228; row++) {
+		for (int row = 164; row < mirrorPoint; row++) {
 			// loop from 13 to just before the mirror point
-			for (int col = 209; col < mirrorPoint; col++) {
+			for (int col = 104; col < 290; col++) {
 
-				leftPixel = pixels[row][col];
-				rightPixel = pixels[row][mirrorPoint - col + mirrorPoint];
-				rightPixel.setColor(leftPixel.getColor());
+				topPixel = pixels[row][col];
+				bottomPixel = pixels[mirrorPoint - row + mirrorPoint][col];
+				bottomPixel.setColor(topPixel.getColor());
 			}
 		}
 	}
